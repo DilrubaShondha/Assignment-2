@@ -227,7 +227,6 @@ padding-top: 10px;
       border-radius: 18px;
 
 background: rgb(34, 34, 34);
-margin-bottom: 100px;
 
     }
     .extra-mile-text{
@@ -260,6 +259,31 @@ border-radius: 18px;
       font-size: 3rem;
       color: white;
       font-weight: 900;
+    }
+    .calculator-text{
+      margin-top: 100px;
+      margin-bottom: 100px;
+    }
+    .calculator-container{
+      width: 80%;
+      margin: 0 auto;
+      border: 2px solid red;
+      background-color: rgb(34, 34, 34);
+    }
+    td, th {
+      border: 1px solid rgba(255, 255, 255, 0.1);
+            text-align: left;
+      padding: 8px;
+      border-collapse: collapse;
+      color: rgba(255, 255, 255, 0.5);
+
+    }
+    .chart-title{
+      color: white;
+      font-size: 2rem;
+      font-weight: 900;
+      margin-top: 50px;
+      margin-bottom: 50px;
     }
 
   /* small device*/
