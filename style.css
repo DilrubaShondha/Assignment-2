@@ -7,6 +7,10 @@
   font-style: normal;
   font-variation-settings:"slnt" 0;
 }
+body{
+  background-color: black;
+  
+}
 *{
     box-sizing: border-box;
     margin: 0;
@@ -42,6 +46,8 @@
 /*shared content*/
 
 .navbar{
+  width: 80%;
+  margin: 0 auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -49,8 +55,6 @@
     margin: 0 auto;
     padding-top: 50px;
     border: 2px solid white;
-    max-width: 80%;
-    margin: 0 auto;
   }
   .nav-links{
     display: flex;
@@ -93,8 +97,9 @@
     /* background: linear-gradient(180.00deg, rgb(17, 17, 17),rgba(119, 119, 119, 0) 100%); */
   }
   .banner{
-    max-width: 80%;
-    margin: 0 auto;
+    width: 80%;
+  margin: 0 auto;
+ 
     display: flex;
     /* justify-content: center; */
     border: 2px solid rebeccapurple;
@@ -172,12 +177,10 @@ padding-top: 10px;
     padding: 20px;
   }
   /*habits section starts*/
-  body{
-    background-color: black;
-  }
+  
   .habits{
     width: 80%;
-    margin: 0 auto;
+  margin: 0 auto;
     padding-top: 100px;
     margin-bottom: 100px;
     margin-top: 100px;
@@ -265,10 +268,11 @@ border-radius: 18px;
       margin-bottom: 100px;
     }
   .container {
+    width: 80%;
+  margin: 0 auto;
       display: flex;
       justify-content: space-around;
-      width: 80%;
-      margin: 0 auto;
+    
       border: 2px solid red;
       background-color: rgb(34, 34, 34);
   }
@@ -331,8 +335,7 @@ border-radius: 18px;
     }
     
     .team-container {
-        width: 80%;
-        margin: 0 auto;
+       
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         border-radius: 18px;
@@ -375,7 +378,63 @@ border-radius: 18px;
         margin: 0 15px 15px;
         color: #999;
     }
-    
+   /*footer section starts here*/ 
+footer{
+  background-color: rgba(255, 255, 255, 0.1);
+  margin-top: 80px;
+  
+}
+.footer-title{
+  color: rgb(230, 83, 60);
+  font-size: 4.5rem;
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+footer h3{
+  color: white;
+  font-size: 2rem;
+  font-weight: 700;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+footer h5{
+  font-size: 1.4rem;
+  color: rgba(255, 255, 255, 0.5);
+  margin-bottom: 20px;
+}
+
+.footer-container{
+  display: flex;
+  width: 80%;
+  margin: 0 auto;
+  padding-bottom: 80px;
+
+}
+.footer-part-1{
+  width: 50%;
+  border: 2px solid white;
+}
+
+.footer-part-2{
+  width: 25%;
+  border: 2px solid white;
+}.footer-part-3{
+  width: 25%;
+  border: 2px solid white;
+}
+footer hr{
+  border: 2px solid rgba(255, 255, 255, 0.1);
+}
+.copyright{
+  font-size: 1.1rem;
+  color: rgba(255, 255, 255, 0.5);
+  padding-bottom: 35px;
+  padding-top: 25px;
+  text-align: center;
+  border: 2px solid white;
+}
+
+  /*footer section ends here*/ 
 
   /* small device*/
   @media only screen and (max-width: 768px) {
