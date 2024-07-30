@@ -7,17 +7,14 @@
   font-style: normal;
   font-variation-settings: "slnt" 0;
 }
-
 body {
   background-color: black;
 }
-
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
-
 /* shared content */
 .para-content {
   font-size: 1rem;
@@ -25,7 +22,6 @@ body {
   margin-top: 15px;
   margin-bottom: 20px;
 }
-
 .btn-primary {
   font-size: 1.1rem;
   font-weight: 600;
@@ -36,7 +32,6 @@ body {
   background: rgb(230, 83, 60);
   border: none;
 }
-
 .btn-secondary {
   font-size: 1.1rem;
   font-weight: 600;
@@ -47,9 +42,9 @@ body {
   background: black;
   border: 1px solid white;
 }
+/* shared content ends */
 
-/* shared content */
-
+/* navbar starts here*/
 .navbar {
   width: 80%;
   margin: 0 auto;
@@ -59,9 +54,7 @@ body {
   max-width: 1440px;
   margin: 0 auto;
   padding-top: 50px;
-  border: 2px solid white;
 }
-
 .nav-links {
   display: flex;
   justify-content: flex-start;
@@ -71,28 +64,23 @@ body {
   padding: 10px;
   align-items: center;
 }
-
 .nav-item {
   list-style: none;
   margin-right: 30px;
 }
-
 .nav-item > a {
   text-decoration: none;
   color: rgb(255, 255, 255);
   font-size: 1rem;
 }
-
 .nav-link {
   text-decoration: none;
 }
-
 #special {
   border-radius: 46px;
-  background: rgb(230, 83, 60);
+  background: rgb(230, 83, 60);s
   padding: 8px 20px 8px 20px;
 }
-
 .brands {
   color: rgb(230, 83, 60);
   font-family: Inter;
@@ -102,46 +90,48 @@ body {
   letter-spacing: 0%;
   text-align: left;
 }
-
 header {
   height: 715px;
-  background-color: black;
   background: linear-gradient(180.00deg, rgb(17, 17, 17),rgba(119, 119, 119, 0) 100%);
 }
-
 .banner {
+  display: flex;
   width: 80%;
   margin: 0 auto;
-  display: flex;
-  /* justify-content: center; */
+  margin-top: 30px;
   border: 2px solid rebeccapurple;
+}
+
+.banner-image {
+  flex: 1; 
+  background-image: url("./images/Images-2.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 580px; 
+  border: 2px solid white;
+  position: relative;
+
 }
 
 .banner-text {
   width: 50%;
   border: 2px solid white;
+  padding-top: 40px;
 }
-
 .banner-title {
   font-size: 5rem;
   color: white;
   font-weight: 900;
 }
-.banner-image {
-  background-image: url("./images/exercise1.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  position: relative;
-  height: 580px;
-  border: 2px solid white;
+.button-container{
+  display: flex;
+  justify-content: space-around;
 }
 
 .first-btn {
   border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 12px;
   backdrop-filter: blur(20px);
-  /* background: rgba(255, 255, 255, 0.1); */
   background: rgba(48, 48, 48, 0.54);
   position: absolute;
   width: 193px;
@@ -151,40 +141,34 @@ header {
   padding-left: 15px;
   padding-top: 10px;
 }
-
 .first-btn h3 {
   font-size: 2.2rem;
   font-weight: 900;
   color: white;
 }
-
 .second-btn {
   border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 12px;
   backdrop-filter: blur(20px);
-  /* background: rgba(255, 255, 255, 0.1); */
   background: rgba(48, 48, 48, 0.54);
   width: 193px;
   height: 98px;
   position: absolute;
-  margin-left: 100px;
+  margin-left: 110px;
   margin-top: 400px;
   padding-top: 10px;
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
-
 .second-btn h3 {
   font-size: 1.5rem;
   font-weight: 900;
   color: white;
 }
-
 .second-btn p {
   color: rgba(239, 237, 232, 0.65);
 }
-
 .btn-ellipse {
   background: rgb(230, 83, 60);
   width: 40px;
@@ -209,28 +193,30 @@ header {
   color: white;
   text-align: center;
 }
-
 .text-center {
   text-align: center;
 }
-
-.habits-card {
+/* .habits-card {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   height: 300px;
+} */
+.habits-card {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  margin-top: 30px;
 }
-
 .habit-card {
   width: 250px;
   height: 180px;
   margin-bottom: 30px;
 }
-
 .habit-card img {
   border-radius: 50%;
   margin-left: 25px;
-  /* display: flex; justify-content: center; align-items: center; */
 }
+
 
 .card-title {
   font-size: 1.2rem;
@@ -292,21 +278,18 @@ header {
   margin: 0 auto;
   display: flex;
   justify-content: space-around;
-  border: 2px solid red;
   background-color: rgb(34, 34, 34);
 }
 
 .bmi-chart, .bmi-calculator {
   padding: 20px;
   border-radius: 10px;
-  border: 2px solid yellow;
   width: 50%;
 }
 
 .bmi-chart {
   padding-left: 100px;
 }
-
 .chart-title {
   color: white;
   font-size: 1.7rem;
@@ -331,7 +314,6 @@ th, td {
 
 form {
   width: 450px;
-  border: 2px solid fuchsia;
   display: flex;
   flex-direction: column;
 }
@@ -349,8 +331,9 @@ input, select {
 .team-section {
   padding: 50px 0;
   text-align: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
-
 .team-container {
   width: 80%;
   margin: 0 auto;
@@ -358,113 +341,83 @@ input, select {
   grid-template-columns: repeat(3, 1fr);
   border-radius: 18px;
   background: rgba(255, 255, 255, 0.1);
-  border: 2px solid yellow;
   gap: 20px;
   padding: 20px;
-}
-
-.team-member {
-  width: 100%;
-  height: 280px;
-  background-image: url("./images/trainer1.png");
-  border: 2px solid white;
-  background-repeat: no-repeat;
-  background-position: center;
-  overflow: hidden;
-  background-color: #2c2c2c;
-  border-radius: 18px;
-    padding: 20px;
-  text-align: center;
+  margin-top: 40px;
 }
 .team-member1 {
   width: 100%;
-  height: 280px;
-  background-image: url("./images/trainer2.png");
-  border: 2px solid white;
+  height: 280px; 
+  background-image: url("./images/trainer1.png");
   background-repeat: no-repeat;
-  background-position: center;
-  overflow: hidden;
-  background-color: #2c2c2c;
-  border-radius: 8px;
-  margin: auto;
-  padding-top: 10px;
-  text-align: center;
+  background-size: cover; 
+  background-position: center ; 
+  border-radius: 18px;
 }
 .team-member2 {
   width: 100%;
-  height: 280px;
-  background-image: url("./images/trainer3.png");
-  border: 2px solid white;
+  height: 280px; 
+  background-image: url("./images/trainer2.png");
   background-repeat: no-repeat;
-  background-position: center;
-  overflow: hidden;
-  background-color: #2c2c2c;
-  border-radius: 8px;
-  margin: auto;
-  padding-top: 10px;
-  text-align: center;
+  background-size: cover; 
+  background-position: center ; 
+  border-radius: 18px;
 }
 .team-member3 {
   width: 100%;
-  height: 280px;
-  background-image: url("./images/trainer4.png");
-  border: 2px solid white;
+  height: 280px; 
+  background-image: url("./images/trainer3.png");
   background-repeat: no-repeat;
-  background-position: center;
-  overflow: hidden;
-  background-color: #2c2c2c;
-  border-radius: 8px;
-  margin: auto;
-  padding-top: 10px;
-  text-align: center;
+  background-size: cover;
+  background-position: center ; 
+  border-radius: 18px;
 }
-.team-member4 {
+.team-member4{
   width: 100%;
-  height: 280px;
-  background-image: url("./images/trainer5.png");
-  border: 2px solid white;
+  height: 280px; 
+  background-image: url("./images/trainer4.png");
   background-repeat: no-repeat;
-  background-position: center;
-  overflow: hidden;
-  background-color: #2c2c2c;
-  border-radius: 8px;
-  margin: auto;
-  padding-top: 10px;
-  text-align: center;
+  background-size: cover; 
+  background-position: center ; 
+  border-radius: 18px;
 }
-
 .team-member5 {
   width: 100%;
-  height: 280px;
+  height: 280px; 
+  background-image: url("./images/trainer5.png");
+  background-repeat: no-repeat;
+  background-size: cover; 
+  background-position: center ;
+  border-radius: 18px;
+}
+.team-member6 {
+  width: 100%;
+  height: 280px; 
   background-image: url("./images/trainer6.png");
   background-repeat: no-repeat;
-  background-position: center;
+  background-size: cover; 
+  background-position: center ; 
   border-radius: 18px;
-  margin: auto;
-  padding-top: 10px;
-  text-align: center;
 }
-
-
-.team-member p {
-  margin: 0 15px 15px;
-  color: #999;
-}
-.image-text{
-text-align: left;  
-padding-top: 150px;
+.team-title{
+  color: white;
+  font-size: 1.3rem;
+  font-weight: 900;
+  padding-left: 10px;
+  text-align: left;
+  padding-top: 215px;
 }
 .team-designation{
+  font-size: .9rem;
+  color: rgba(255, 255, 255, 0.5);
   text-align: left;  
-border: 2px solid white;
-margin-top: 20px;
-padding-top: 10px;
+  padding-left: 10px;
+  padding-top: 5px;
 }
 
 /* footer section starts here */
 footer {
   background-color: rgba(255, 255, 255, 0.1);
-  margin-top: 80px;
 }
 
 .footer-title {
@@ -497,10 +450,13 @@ footer h5 {
 
 .footer-part-1 {
   width: 50%;
+  border: 2px solid wheat;
 }
 
 .footer-part-2 {
   width: 25%;
+  border: 2px solid red;
+
 }
 
 .footer-part-3 {
@@ -522,9 +478,16 @@ footer hr {
 /* footer section ends here */
 
 /* small device */
-@media only screen and (max-width: 768px) {
+ @media only screen and (max-width: 768px) {
   .banner {
     flex-direction: column;
+    width: 95%;
+    margin: 0 auto;
+  } 
+  .banner-text {
+    width: 100%;
+    padding-left: 10px;
+    border: 2px solid white;
   }
   .nav-links {
     display: none;
@@ -532,7 +495,97 @@ footer hr {
   .banner-text {
     padding-left: 10px;
   }
+  .banner-image {
+    height: 580px; /* Adjust height for mobile view */
+    min-height: 580px;
+  }
+  /*habit section responsive starts*/
+  .habits{
+    margin-top: 330px;
+  }
   .habits-card {
+    margin-top: 100px;
+    width: 60%;
+    margin: 0 auto;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
+    height:1600px;
+}
+
+  .habit-card img {
+    width: 250px;
+    height: 260px;
+    margin: 0 auto;
+    margin-top: 20px;
+  }
+
+  .habit-card {
+    padding: 10px;
+  }
+
+  
+  /*habit section responsive ends*/
+ 
+    /*milege section responsive starts*/
+  .extra-mile{
+     flex-direction: column;
+     width: 90%;
+   }
+   .extra-mile-text{
+    width: 90%;
+   }
+   .extra-mile-image{
+    width: 100%;
+    margin: 0 auto;
+    padding-bottom: 20px;
+   }
+   #join-button{
+    width: 90%;
+   }
+    /*milege section responsive endss*/
+
+    /*calculator section responsive starts*/
+  .container{
+    flex-direction: column;
+    width: 100%;
+  }
+  form{
+    width: 100%;
+  }
+    
+.bmi-chart, .bmi-calculator {
+  padding: 20px;
+  border-radius: 10px;
+  width: 100%;
+}
+.bmi-chart{
+  margin-left: 15px;
+}
+/*calculator section responsive done*/
+
+  /*team section responsive starts*/
+  .team-container{
     grid-template-columns: repeat(1, 1fr);
   }
+  
+/*team section responsive done*/
+
+  /*footer section responsive starts*/
+  .footer-container{
+    flex-direction: column;
+  }
+  .footer-part-1 {
+    width: 80%;
+  }
+  .footer-part-2 {
+    width: 80%;
+  }
+  .footer-part-3 {
+    width: 80%;
+  }
+  .copyright{
+    font-size: 1.5rem;
+  }
+    /*footer section responsive done*/
+
 }
