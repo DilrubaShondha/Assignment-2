@@ -11,8 +11,7 @@
 .dancing-script-font {
   font-family: "Dancing Script", cursive;
   font-optical-sizing: auto;
-  font-weight:6.7rem;
-  /* font-style: normal; */
+  font-weight:9.7rem;
   font-weight: 700;
 }
 body {
@@ -107,23 +106,17 @@ header {
   width: 80%;
   margin: 0 auto;
   margin-top: 30px;
-  border: 2px solid rebeccapurple;
 }
-
 .banner-image {
   flex: 1; 
   background-image: url("./images/Images-2.png");
   background-repeat: no-repeat;
   background-position: center;
   height: 580px; 
-  border: 2px solid white;
   position: relative;
-
 }
-
 .banner-text {
   width: 50%;
-  border: 2px solid white;
   padding-top: 40px;
 }
 .banner-title {
@@ -135,7 +128,6 @@ header {
   display: flex;
   justify-content: space-around;
 }
-
 .first-btn {
   border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 12px;
@@ -193,9 +185,7 @@ header {
   padding-top: 100px;
   margin-bottom: 100px;
   margin-top: 100px;
-  border: 2px solid white;
 }
-
 .habit-title {
   font-size: 3rem;
   font-weight: 900;
@@ -205,11 +195,6 @@ header {
 .text-center {
   text-align: center;
 }
-/* .habits-card {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  height: 300px;
-} */
 .habits-card {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -225,8 +210,6 @@ header {
   border-radius: 50%;
   margin-left: 25px;
 }
-
-
 .card-title {
   font-size: 1.2rem;
   font-weight: 600;
@@ -244,29 +227,24 @@ header {
   border-radius: 18px;
   background: rgb(34, 34, 34);
   margin-top: 180px;
-  border: 2px solid yellow;
 }
-
 .extra-mile-text {
   width: 60%;
   padding-left: 50px;
   padding-top: 40px;
   padding-bottom: 30px;
 }
-
 .extra-mile-image {
   width: 40%;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-
 .extra-mile-image img {
   width: 350px;
   height: 310px;
   border-radius: 18px;
 }
-
 .extra-mile-title {
   font-size: 3rem;
   font-weight: 900;
@@ -279,15 +257,12 @@ header {
   color: white;
   font-weight: 900;
 }
-
 .calculator-text {
-  
-width: 670px;
-margin: 0 auto;
+  width: 670px;
+  margin: 0 auto;
   margin-top: 100px;
   margin-bottom: 100px;
 }
-
 .container {
   width: 80%;
   margin: 0 auto;
@@ -295,13 +270,11 @@ margin: 0 auto;
   justify-content: space-around;
   background-color: rgb(34, 34, 34);
 }
-
 .bmi-chart, .bmi-calculator {
   padding: 20px;
   border-radius: 10px;
   width: 50%;
 }
-
 .bmi-chart {
   padding-left: 100px;
 }
@@ -312,27 +285,22 @@ margin: 0 auto;
   margin-top: 30px;
   margin-bottom: 30px;
 }
-
 table {
   width: 300px;
   border-collapse: collapse;
 }
-
 table, th, td {
   border: 1px solid #444;
 }
-
 th, td {
   padding: 10px;
   text-align: left;
 }
-
 form {
   width: 450px;
   display: flex;
   flex-direction: column;
 }
-
 input, select {
   margin: 10px 0;
   padding: 10px;
@@ -341,7 +309,6 @@ input, select {
   background: rgba(255, 255, 255, 0.1);
   color: rgba(255, 255, 255, 0.6);
 }
-
 /* team section starts */
 .team-section {
   padding: 50px 0;
@@ -434,14 +401,12 @@ input, select {
 footer {
   background-color: rgba(255, 255, 255, 0.1);
 }
-
 .footer-title {
   color: rgb(230, 83, 60);
   font-size: 4.5rem;
   margin-top: 50px;
   margin-bottom: 30px;
 }
-
 footer h3 {
   color: white;
   font-size: 2rem;
@@ -449,35 +414,26 @@ footer h3 {
   margin-top: 30px;
   margin-bottom: 30px;
 }
-
 footer h5 {
   font-size: 1.4rem;
   color: rgba(255, 255, 255, 0.5);
   margin-bottom: 20px;
 }
-
 .footer-container {
   display: flex;
   width: 80%;
   margin: 0 auto;
   padding-bottom: 80px;
 }
-
 .footer-part-1 {
   width: 50%;
-  border: 2px solid wheat;
 }
-
 .footer-part-2 {
   width: 25%;
-  border: 2px solid red;
-
 }
-
 .footer-part-3 {
   width: 25%;
 }
-
 footer hr {
   border: 1px solid rgba(255, 255, 255, 0.1);
 }
@@ -493,86 +449,81 @@ footer hr {
 /* footer section ends here */
 
 /* small device */
- @media only screen and (max-width: 768px) {
-  .banner {
-    flex-direction: column;
-    width: 95%;
-    margin: 0 auto;
-  } 
-  .banner-text {
-    width: 100%;
-    padding-left: 10px;
-    border: 2px solid white;
-  }
-  .nav-links {
-    display: none;
-  }
-  .banner-text {
-    padding-left: 10px;
-  }
-  .banner-image {
-    height: 580px; /* Adjust height for mobile view */
-    min-height: 580px;
-  }
-  /*habit section responsive starts*/
-  .habits{
-    margin-top: 330px;
-  }
-  .habits-card {
-    margin-top: 100px;
-    width: 60%;
-    margin: 0 auto;
-    grid-template-columns: repeat(1, 1fr);
-    gap: 20px;
-    height:1600px;
+@media only screen and (max-width: 768px) {
+.banner {
+  flex-direction: column;
+  width: 95%;
+  margin: 0 auto;
+} 
+.banner-text {
+  width: 100%;
+  padding-left: 10px;
+  border: 2px solid white;
+}
+.nav-links {
+  display: none;
+}
+.banner-text {
+  padding-left: 10px;
+}
+.banner-image {
+  height: 580px; /* Adjust height for mobile view */
+  min-height: 580px;
+}
+/*habit section responsive starts*/
+.habits{
+  margin-top: 330px;
+}
+.habits-card {
+  margin-top: 100px;
+  width: 60%;
+  margin: 0 auto;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 20px;
+  height:1600px;
+}
+.habit-card img {
+  width: 250px;
+  height: 260px;
+  margin: 0 auto;
+  margin-top: 20px;
 }
 
-  .habit-card img {
-    width: 250px;
-    height: 260px;
-    margin: 0 auto;
-    margin-top: 20px;
-  }
-
-  .habit-card {
-    padding: 10px;
-  }
-
-  
-  /*habit section responsive ends*/
+.habit-card {
+  padding: 10px;
+}  
+/*habit section responsive ends*/
  
-    /*milege section responsive starts*/
-  .extra-mile{
-     flex-direction: column;
-     width: 90%;
-     height: auto;
-   }
-   .extra-mile-text{
-    width: 90%;
-   }
-   .extra-mile-image{
-    width: 100%;
-    /* height: 200px; */
-    margin: 0 auto;
-    padding-bottom: 20px;
-    border: 2px solid rebeccapurple;
-   }
-   #join-button{
-    width: 90%;
-   }
-    /*milege section responsive endss*/
+ /*milege section responsive starts*/
+.extra-mile{
+  flex-direction: column;
+  width: 90%;
+  height: auto;
+}
+.extra-mile-text{
+  width: 90%;
+}
+.extra-mile-image{
+  width: 100%;
+  margin: 0 auto;
+  padding-bottom: 20px;
+}
+#join-button{
+  width: 90%;
+}
+/*milege section responsive ends*/
 
-    /*calculator section responsive starts*/
-    .calculator{
-      width: 100%;
-    }
-  .container{
-    flex-direction: column;
-    width: 100%;
-  }
-  form{
-    width: 100%;
-  }
+/*calculator section responsive starts*/
+.calculator{
+  width: 100%;
+}
+.container{
+ flex-direction: column;
+ width: 100%;
+}
+form{
+  width: 100%;
+}
     
 .bmi-chart, .bmi-calculator {
   padding: 20px;
@@ -587,14 +538,14 @@ footer hr {
 }
 /*calculator section responsive done*/
 
-  /*team section responsive starts*/
+/*team section responsive starts*/
   .team-container{
     grid-template-columns: repeat(1, 1fr);
   }
   
 /*team section responsive done*/
 
-  /*footer section responsive starts*/
+/*footer section responsive starts*/
   footer{
     width: 100%;
   }
@@ -613,6 +564,6 @@ footer hr {
   .copyright{
     font-size: 1.5rem;
   }
-    /*footer section responsive done*/
+/*footer section responsive done*/
 
 }
