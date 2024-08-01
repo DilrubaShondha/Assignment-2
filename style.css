@@ -309,6 +309,29 @@ input, select {
   background: rgba(255, 255, 255, 0.1);
   color: rgba(255, 255, 255, 0.6);
 }
+.measures{
+  display: flex;
+  gap: 10px;
+}
+#height{
+  width: 46%;
+}
+#weight{
+  width: 46%;
+}
+.age-gender{
+  display: flex;
+  gap: 10px;
+}
+#id{
+  width: 50%;
+}
+#sex{
+  width: 50%;
+}
+#activity{
+  width: 94%;
+}
 /* team section starts */
 .team-section {
   padding: 50px 0;
